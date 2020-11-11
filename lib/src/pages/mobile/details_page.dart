@@ -58,7 +58,12 @@ class MobileDetailsPage extends StatelessWidget {
           ),
         ],
         
-      )
+      ),
+      floatingActionButton: FloatingActionButton(
+        child: Icon(Icons.play_arrow),
+        backgroundColor: Color(0xffff9a00),
+        onPressed: (){},
+      ),
    );
   }
 
