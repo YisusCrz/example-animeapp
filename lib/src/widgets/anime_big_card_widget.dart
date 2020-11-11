@@ -1,6 +1,11 @@
 import 'package:flutter/material.dart';
 
+import 'package:flutter/cupertino.dart';
+
 import 'package:anime2_app/src/models/anime_model.dart';
+
+import 'package:anime2_app/src/pages/mobile/details_page.dart';
+
 
 class AnimeBigCardWidget extends StatelessWidget {
 
@@ -15,7 +20,7 @@ class AnimeBigCardWidget extends StatelessWidget {
     return Padding(
       padding: const EdgeInsets.only(top: 30.0),
       child: GestureDetector(
-        onTap: (){ print(this.anime.title); },
+        onTap: () => Navigator.push( context, CupertinoPageRoute( builder: ( _ ) => MobileDetailsPage( anime: this.anime )  ) ),
         child: Container(
           height: 150,
           width: 120,

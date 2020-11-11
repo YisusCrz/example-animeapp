@@ -24,9 +24,9 @@ class HomePageMobile extends StatelessWidget {
             _buildBigSwiper( 1,1 ),
             SizedBox(height: 20),
             _buildSmallSlider( 1, 2, 'Acción' ),
-            _buildSmallSlider( 1, 3, 'Aventura' ),
+            // _buildSmallSlider( 1, 3, 'Aventura' ),
             _buildSmallSlider( 1, 6, 'Comedia' ),
-            _buildSmallSlider( 2, 1, 'Comedia' ),
+            _buildSmallSlider( 2, 1, 'Terror' ),
           ],
         ),
       )
